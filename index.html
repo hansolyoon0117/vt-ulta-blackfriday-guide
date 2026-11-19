@@ -454,6 +454,9 @@ section{padding:56px 0}
 .pcar{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-radius:16px;box-shadow:var(--shadow);background:#000;scrollbar-width:none}
 .pcar::-webkit-scrollbar{display:none}
 .pcar img{flex:0 0 100%;width:100%;aspect-ratio:3/4;object-fit:cover;scroll-snap-align:start;display:block}
+.pwrap{position:relative}
+.pbtn{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:36px;height:36px;border-radius:50%;border:0;background:rgba(255,255,255,.88);color:#111;font-size:22px;line-height:1;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.pbtn.pl{left:8px}.pbtn.pr{right:8px}
 .pcar-hint{font-size:11.5px;font-weight:700;color:var(--ink3);margin-top:6px;letter-spacing:.04em}
 
 .tt{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -555,7 +558,7 @@ body{background:var(--bg);color:var(--ink)}</style></head><body>
   <div class="hook rv"><div class="hook-l">THE HOOK · ON-SCREEN TEXT</div><p class="hook-p"><span class="hook-box">ULTA Must Haves</span></p></div>
   <div class="cgrid">
    <aside class="ref rv"><p class="rnote" style="margin:0 0 12px">Format reference: a flat-lay cover, then one product per slide with a rating and key points.</p>
-    <div class="tt" style="grid-template-columns:1fr"><div class="tvc"><div class="pcar" tabindex="0" aria-label="@yeonjinaahh photo carousel, swipe"><img src="img/ref/yj1.jpg" alt="@yeonjinaahh slide 1" loading="lazy"><img src="img/ref/yj2.jpg" alt="@yeonjinaahh slide 2" loading="lazy"><img src="img/ref/yj3.jpg" alt="@yeonjinaahh slide 3" loading="lazy"><img src="img/ref/yj4.jpg" alt="@yeonjinaahh slide 4" loading="lazy"><img src="img/ref/yj5.jpg" alt="@yeonjinaahh slide 5" loading="lazy"><img src="img/ref/yj6.jpg" alt="@yeonjinaahh slide 6" loading="lazy"><img src="img/ref/yj7.jpg" alt="@yeonjinaahh slide 7" loading="lazy"></div><div class="pcar-hint">Swipe ← → · 7 slides</div><a class="tvh" href="https://www.tiktok.com/@yeonjinaahh/photo/7680904860425915655" target="_blank" rel="noopener">@yeonjinaahh on TikTok ↗</a></div></div></aside>
+    <div class="tt" style="grid-template-columns:1fr"><div class="tvc"><div class="pwrap"><button class="pbtn pl" aria-label="Previous slide" onclick="this.parentNode.querySelector('.pcar').scrollBy({left:-this.parentNode.offsetWidth,behavior:'smooth'})">‹</button><button class="pbtn pr" aria-label="Next slide" onclick="this.parentNode.querySelector('.pcar').scrollBy({left:this.parentNode.offsetWidth,behavior:'smooth'})">›</button><div class="pcar" tabindex="0" aria-label="@yeonjinaahh photo carousel, swipe"><img src="img/ref/yj1.jpg" alt="@yeonjinaahh slide 1" loading="lazy"><img src="img/ref/yj2.jpg" alt="@yeonjinaahh slide 2" loading="lazy"><img src="img/ref/yj3.jpg" alt="@yeonjinaahh slide 3" loading="lazy"><img src="img/ref/yj4.jpg" alt="@yeonjinaahh slide 4" loading="lazy"><img src="img/ref/yj5.jpg" alt="@yeonjinaahh slide 5" loading="lazy"><img src="img/ref/yj6.jpg" alt="@yeonjinaahh slide 6" loading="lazy"><img src="img/ref/yj7.jpg" alt="@yeonjinaahh slide 7" loading="lazy"></div></div><div class="pcar-hint">Swipe or tap ‹ › · 7 slides</div><a class="tvh" href="https://www.tiktok.com/@yeonjinaahh/photo/7680904860425915655" target="_blank" rel="noopener">@yeonjinaahh on TikTok ↗</a></div></div></aside>
    <div>
     <div class="blk rv"><h4 class="blk-h">CONTENT FLOW · 4–5 SLIDES</h4><ol class="steps">
      <li class="step"><span class="sn">01</span><div><h4>Slide 1 · Cover</h4><p>Lay out <b>6 or more products</b>, including <b>VT Reedle Shot</b> and <b>VT PDRN Essence</b>, and take a flat-lay photo.</p><div class="ostext"><b>On-screen text:</b> ULTA Must Haves</div></div></li>
