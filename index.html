@@ -441,6 +441,23 @@ section{padding:56px 0}
 .kchips span{font-size:12.5px;font-weight:700;padding:6px 10px;border-radius:999px;background:var(--blue-ss);color:var(--ink)}
 .tt{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .tt iframe{width:100%;aspect-ratio:9/17;border:0;border-radius:16px;background:#000}
+.tt a.ttcard,.ttcard{display:flex;min-width:0;width:100%;box-sizing:border-box;flex-direction:column;justify-content:flex-end;gap:4px;aspect-ratio:9/14;border-radius:16px;padding:14px 12px;text-decoration:none;background:radial-gradient(120% 80% at 50% 30%,#3a3e46,#0b0c0f);color:#fff;position:relative;box-shadow:var(--shadow)}
+.ttcard .ttplay{position:absolute;top:36%;left:50%;transform:translate(-50%,-50%);width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.16);display:grid;place-items:center;font-size:20px;padding-left:4px;box-sizing:border-box}
+.ttcard .ttk{font-size:10.5px;font-weight:800;letter-spacing:.12em;color:#9aa3b0}
+.ttcard .tth{font-size:13.5px;font-weight:800;color:#fff;word-break:break-all}
+.ttcard .ttgo{font-size:12.5px;font-weight:700;color:#7fd3e6!important;display:block;margin:0}
+.tt a.ttcard{margin-top:0}
+.tvc{min-width:0}
+.tvv{display:block;border-radius:16px;overflow:hidden;background:#000;aspect-ratio:9/16;box-shadow:var(--shadow);margin:0!important}
+.tvv video{display:block;width:100%;height:100%;object-fit:cover}
+.tt a.tvh{font-size:12.5px;font-weight:700;color:var(--ink3);text-decoration:none;display:block;margin-top:6px}
+.pcar{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-radius:16px;box-shadow:var(--shadow);background:#000;scrollbar-width:none}
+.pcar::-webkit-scrollbar{display:none}
+.pcar img{flex:0 0 100%;width:100%;aspect-ratio:3/4;object-fit:cover;scroll-snap-align:start;display:block}
+.pcar-hint{font-size:11.5px;font-weight:700;color:var(--ink3);margin-top:6px;letter-spacing:.04em}
+
+.tt{grid-template-columns:repeat(2,minmax(0,1fr))}
+.ref .tt[style]{grid-template-columns:minmax(0,1fr)!important;max-width:260px}
 .tt a{font-size:12.5px;font-weight:700;color:var(--ink3);text-decoration:none;display:block;margin-top:4px}
 .ostext{margin-top:8px;font-size:13.5px;color:var(--ink);line-height:1.6}.ostext b{color:var(--cd)}
 .back{display:inline-flex;gap:6px;align-items:center;margin:8px 0 18px;font-weight:750;font-size:14px;color:var(--ink2);text-decoration:none}
@@ -518,7 +535,7 @@ body{background:var(--bg);color:var(--ink)}</style></head><body>
   <div class="hook rv"><div class="hook-l">THE HOOK</div><p class="hook-p"><span class="hook-box">My top 3 Ulta products worth repurchasing</span></p></div>
   <div class="cgrid">
    <aside class="ref rv"><p class="rnote" style="margin:0 0 12px">Mood reference: a casual Ulta visit sharing your top picks. Film it in your own style!</p>
-    <div class="tt"><div><iframe src="https://www.tiktok.com/embed/v2/7642743004616248590" allow="encrypted-media; fullscreen" loading="lazy" title="@.isaescu reference video"></iframe><a href="https://www.tiktok.com/@.isaescu/video/7642743004616248590" target="_blank" rel="noopener">@.isaescu ↗</a></div><div><iframe src="https://www.tiktok.com/embed/v2/7683218228113394974" allow="encrypted-media; fullscreen" loading="lazy" title="@skylerreneee reference video"></iframe><a href="https://www.tiktok.com/@skylerreneee/video/7683218228113394974" target="_blank" rel="noopener">@skylerreneee ↗</a></div></div></aside>
+    <div class="tt"><div class="tvc"><a class="tvv" href="https://www.tiktok.com/@.isaescu/video/7642743004616248590" target="_blank" rel="noopener" aria-label="Watch @.isaescu on TikTok"><video autoplay loop muted playsinline preload="metadata" poster="img/ref/7642743004616248590_poster.jpg" src="img/ref/7642743004616248590_clip.mp4"></video></a><a class="tvh" href="https://www.tiktok.com/@.isaescu/video/7642743004616248590" target="_blank" rel="noopener">@.isaescu · full video ↗</a></div><div class="tvc"><a class="tvv" href="https://www.tiktok.com/@skylerreneee/video/7683218228113394974" target="_blank" rel="noopener" aria-label="Watch @skylerreneee on TikTok"><video autoplay loop muted playsinline preload="metadata" poster="img/ref/7683218228113394974_poster.jpg" src="img/ref/7683218228113394974_clip.mp4"></video></a><a class="tvh" href="https://www.tiktok.com/@skylerreneee/video/7683218228113394974" target="_blank" rel="noopener">@skylerreneee · full video ↗</a></div></div></aside>
    <div>
     <div class="blk rv"><h4 class="blk-h">CONTENT FLOW</h4><ol class="steps">
      <li class="step"><span class="sn">01</span><div><h4>Open at Ulta, inside or outside the store</h4><p>Start with a photo (and/or video) of you at Ulta, inside or outside the store, like the opening shot of <b>@.isaescu</b>’s video.</p><div class="script"><b>SCRIPT (E.G.)</b>“i've spent way too much money at ulta this past year, and i want to show you guys my top three things i'd recommend.”</div></div></li>
@@ -538,7 +555,7 @@ body{background:var(--bg);color:var(--ink)}</style></head><body>
   <div class="hook rv"><div class="hook-l">THE HOOK · ON-SCREEN TEXT</div><p class="hook-p"><span class="hook-box">ULTA Must Haves</span></p></div>
   <div class="cgrid">
    <aside class="ref rv"><p class="rnote" style="margin:0 0 12px">Format reference: a flat-lay cover, then one product per slide with a rating and key points.</p>
-    <div class="tt" style="grid-template-columns:1fr"><div><iframe src="https://www.tiktok.com/embed/v2/7680904860425915655" allow="encrypted-media; fullscreen" loading="lazy" title="@yeonjinaahh reference video"></iframe><a href="https://www.tiktok.com/@yeonjinaahh/photo/7680904860425915655" target="_blank" rel="noopener">@yeonjinaahh ↗</a></div></div></aside>
+    <div class="tt" style="grid-template-columns:1fr"><div class="tvc"><div class="pcar" tabindex="0" aria-label="@yeonjinaahh photo carousel, swipe"><img src="img/ref/yj1.jpg" alt="@yeonjinaahh slide 1" loading="lazy"><img src="img/ref/yj2.jpg" alt="@yeonjinaahh slide 2" loading="lazy"><img src="img/ref/yj3.jpg" alt="@yeonjinaahh slide 3" loading="lazy"><img src="img/ref/yj4.jpg" alt="@yeonjinaahh slide 4" loading="lazy"><img src="img/ref/yj5.jpg" alt="@yeonjinaahh slide 5" loading="lazy"><img src="img/ref/yj6.jpg" alt="@yeonjinaahh slide 6" loading="lazy"><img src="img/ref/yj7.jpg" alt="@yeonjinaahh slide 7" loading="lazy"></div><div class="pcar-hint">Swipe ← → · 7 slides</div><a class="tvh" href="https://www.tiktok.com/@yeonjinaahh/photo/7680904860425915655" target="_blank" rel="noopener">@yeonjinaahh on TikTok ↗</a></div></div></aside>
    <div>
     <div class="blk rv"><h4 class="blk-h">CONTENT FLOW · 4–5 SLIDES</h4><ol class="steps">
      <li class="step"><span class="sn">01</span><div><h4>Slide 1 · Cover</h4><p>Lay out <b>6 or more products</b>, including <b>VT Reedle Shot</b> and <b>VT PDRN Essence</b>, and take a flat-lay photo.</p><div class="ostext"><b>On-screen text:</b> ULTA Must Haves</div></div></li>
